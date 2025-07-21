@@ -1,0 +1,120 @@
+/* Estilo base */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #e0eafc, #cfdef3);
+  margin: 0;
+  padding: 20px;
+  color: #333;
+}
+
+/* Contenedor principal */
+.container {
+  max-width: 900px;
+  margin: auto;
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+/* Títulos */
+h1, h2 {
+  text-align: center;
+  color: #2a2a2a;
+  margin-bottom: 20px;
+}
+
+/* Formularios */
+form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+form input, form select, form button {
+  padding: 12px;
+  flex: 1 1 100%;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 15px;
+}
+
+/* Botones generales */
+button, .btn {
+  background-color: #0077cc;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  cursor: pointer;
+  border-radius: 8px;
+  font-size: 15px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover, .btn:hover {
+  background-color: #005fa3;
+}
+
+/* Botón eliminar */
+.btn {
+  background-color: #ff4d4d;
+  margin: 20px auto;
+  display: block;
+  width: fit-content;
+}
+
+.btn:hover {
+  background-color: #e60000;
+}
+
+/* Tarjeta de evento */
+.event {
+  background-color: #f9f9f9;
+  border-left: 6px solid #0077cc;
+  padding: 20px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.05);
+}
+
+.event h3 {
+  margin: 0 0 10px;
+  color: #0077cc;
+}
+
+/* Lista de emprendimientos */
+.event ul {
+  margin: 10px 0 0 20px;
+  padding-left: 0;
+  list-style-type: disc;
+}
+
+.event li {
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+  border-bottom: 1px dashed #ccc;
+}
+
+.event li:last-child {
+  border-bottom: none;
+}
+
+/* Imagen del producto */
+.event img {
+  margin-top: 5px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  max-width: 100px;
+  display: block;
+}
+
+/* Links */
+a {
+  color: #0077cc;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}

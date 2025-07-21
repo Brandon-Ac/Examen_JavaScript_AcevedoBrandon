@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>BucaraEmprende</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <div class="container">
+    <h1>BucaraEmprende</h1>
+
+    <section>
+      <h2>Registrar feria</h2>
+      <form id="eventForm">
+        <input type="text" id="eventName" placeholder="Nombre de la feria" required />
+        <input type="text" id="eventLocation" placeholder="Lugar" required />
+        <input type="date" id="eventDateInicio" required />
+        <input type="date" id="eventDateFinal" required />
+        <input type="time" id="eventTimeInicio" required />
+        <input type="time" id="eventTimeFinal" required />
+        <button type="submit">Registrar feria</button>
+      </form>
+    </section>
+
+    <section>
+      <h2>Registrar Emprendimiento</h2>
+      <form id="businessForm">
+        <select id="eventSelect" required></select>
+        <input type="text" id="businessName" placeholder="Nombre del emprendimiento" required />
+        <input type="text" id="category" placeholder="Categoría" required />
+        <input type="text" id="businessDescription" placeholder="Descripción del emprendimiento" required />
+        <input type="url" id="socialLink" placeholder="Enlace a red social" required />
+        <hr />
+        <input type="text" id="productName" placeholder="Nombre del producto o servicio" required />
+        <input type="number" id="productPrice" placeholder="Precio" required />
+        <input type="text" id="productDescription" placeholder="Descripción del producto o servicio" required />
+        <input type="url" id="productImage" placeholder="URL de la imagen del producto" required />
+        <button type="submit">Agregar Emprendimiento</button>
+      </form>
+    </section>
+
+    <section>
+      <h2>Eventos Registrados</h2>
+      <div id="eventList"></div>
+    </section>
+  </div>
+
+  <button class="btn" id="Borrar">Borrar LocalStorage</button>
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+</html>
